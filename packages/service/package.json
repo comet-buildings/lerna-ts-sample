@@ -1,0 +1,23 @@
+{
+  "name": "@repo/service",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "alexvictoor <alexvictoor@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "build/service.js",
+  "directories": {
+    "lib": "build",
+    "test": "__tests__"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "tsc": "tsc"
+  },
+  "dependencies": {
+    "@repo/common": "^0.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@repo/common",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "alexvictoor <alexvictoor@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "build/common.js",
+  "directories": {
+    "lib": "build",
+    "test": "__tests__"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1",
+    "tsc": "tsc"
+
+  }
+}
