@@ -19,5 +19,8 @@
   },
   "dependencies": {
     "@repo/common": "^0.0.0"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
   }
 }
