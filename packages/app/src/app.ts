@@ -7,8 +7,9 @@ const port = 8080; // default port to listen
 
 // define a route handler for the default home page
 app.get( "/", ( req, res ) => {
+    console.log("handling request");
     res.json({
-        message: saySometing()
+        message: saySometing() + " v2" 
     })
 } );
 
