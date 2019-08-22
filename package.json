@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "postinstall": "node_modules/.bin/lerna bootstrap && node_modules/.bin/lerna run tsc",
-    "start": "cd packages/app/build && node app.js"
+    "start": "cd packages/$APP_NAME/build && node app.js"
   },
   "devDependencies": {
     "@types/jest": "^24.0.15",
