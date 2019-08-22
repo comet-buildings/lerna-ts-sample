@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "postinstall": "yarn && node_modules/.bin/lerna bootstrap && node_modules/.bin/lerna run tsc",
+    "postinstall": "node_modules/.bin/lerna bootstrap && node_modules/.bin/lerna run tsc",
     "start": "cd packages/app/build && node app.js"
   },
   "devDependencies": {
