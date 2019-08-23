@@ -2,7 +2,7 @@ import express from "express";
 import { saySometing } from '@repo/service'
 
 const app = express();
-const port = 8080; // default port to listen
+const port = process.env.PORT || 8080; // default port to listen
 
 
 // define a route handler for the default home page
