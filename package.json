@@ -4,7 +4,7 @@
   "scripts": {
     "compile": "node_modules/.bin/lerna bootstrap && node_modules/.bin/lerna run tsc",
     "heroku-postbuild": "echo $SOURCE_VERSION && echo $SOURCE_VERSION >> ./COMMIT_ID && yarn compile",
-    "start": "cd packages/$APP_NAME/build && COMMIT_ID=$(cat ./COMMIT_ID) node app.js"
+    "start": "cd packages/$APP_NAME/build && COMMIT_ID=$(cat ../../../COMMIT_ID) node app.js"
   },
   "devDependencies": {
     "@types/jest": "^24.0.15",
