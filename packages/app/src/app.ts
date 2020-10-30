@@ -8,7 +8,7 @@ const port = process.env.PORT || 8080; // default port to listen
 app.get("/", (req, res) => {
   console.log("handling request");
   res.json({
-    message: saySometing() + " v2",
+    message: saySometing() + process.env.SOURCE_VERSION,
   });
 });
 
