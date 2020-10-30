@@ -3,8 +3,8 @@
   "private": true,
   "scripts": {
     "compile": "node_modules/.bin/lerna bootstrap && node_modules/.bin/lerna run tsc",
-    "heroku-postbuild": "yarn compile",
-    "start": "cd packages/$APP_NAME/build && node app.js"
+    "heroku-postbuild": "echo $SOURCE_VERSION >> ./COMMIT_ID && yarn compile",
+    "start": "COMMIT_ID=$(cat ./COMMIT_ID) && cd packages/$APP_NAME/build && node app.js"
   },
   "devDependencies": {
     "@types/jest": "^24.0.15",
